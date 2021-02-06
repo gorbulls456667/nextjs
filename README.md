@@ -16,6 +16,7 @@ You can start editing the page by modifying `pages/index.js`. The page auto-upda
 
 ```javascript
 console.log("ciao");
+<h1>test</h1>
 ```
 
 ## Learn More
