@@ -15,8 +15,13 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
 
 ```jsx
-console.log("ciao");
-<h1>test</h1>
+import create from 'zustand'
+
+const useStore = create(set => ({
+  bears: 0,
+  increasePopulation: () => set(state => ({ bears: state.bears + 1 })),
+  removeAllBears: () => set({ bears: 0 })
+}))
 ```
 
 ## Learn More
